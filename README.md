@@ -1,16 +1,68 @@
-# React + Vite
+# HR Resource Management System 🏢
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern HR Dashboard built with React, Vite, and Recharts for managing employee data, leave requests, and performance tracking.
 
-Currently, two official plugins are available:
+## 🎯 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dashboard** - Overview of total employees, active employees, departments, and pending leaves with department-wise bar chart
+- **Employees** - View all employees with search and filter functionality
+- **Leave Requests** - Track employee leave statuses
+- **Performance** - Visualize employee performance ratings with line charts
+- **Responsive Design** - Clean and modern UI with Tailwind CSS
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19.2.5
+- **Build Tool**: Vite 8.0.10
+- **Routing**: React Router DOM v7
+- **Charts**: Recharts 3.8.1
+- **Styling**: Tailwind CSS 4.2.4
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+## 🚀 Running the Project
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5174/`
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   └── Sidebar.jsx
+├── page/
+│   ├── Dashboard.jsx
+│   ├── Employees.jsx
+│   ├── Leave.jsx
+│   └── Performance.jsx
+├── data/
+│   └── Employees.js
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+## 📊 Dashboard Pages
+
+1. **Dashboard** - KPI cards and department analytics
+2. **Employees** - Employee list with search/filter
+3. **Leave Requests** - Leave status tracking
+4. **Performance** - Employee performance graph
+
+## 🎨 Styling
+
+Custom CSS with responsive design for all screen sizes.
+
+## 📝 License
+
+MIT
